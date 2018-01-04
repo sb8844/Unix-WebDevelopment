@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+#text, #form {
+  margin: 10px;
+  padding: 3px;
+}
+</style>
+<div class="w3-bar w3-black">
+  <a href="projectLinks.html" class="w3-bar-item w3-button">Home</a>
+  <a href="upload1.php" class="w3-bar-item w3-button">Upload</a>
+  <a href="searchFiles.html" class="w3-bar-item w3-button">Search</a>
+  <a href="viewFile1.php" class="w3-bar-item w3-button">View</a>
+</div>
+
+<body>
+<div id="text">
+Enter the search term and specify the field you are searching through by clicking the white button next to File Name or User.<br>
+</div>
+<div id="form">
+<h4>Search By:</h4>
+<form action="searchFiles.php" method="post">
+Search: <input type="text" name="term" placeholder="Enter Search Term"/><br>
+  <input type="radio" name="field" value="filename" checked="checked"> File Name
+  <input type="radio" name="field" value="user"> User<br>
+<input type="submit" value="Search">
+</form>
+</div>
+
+</body>
+</html>
